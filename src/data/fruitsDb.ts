@@ -1,4 +1,4 @@
-export type Fruits = {
+export type Fruit = {
 	image:
 		| "🍇"
 		| "🍈"
