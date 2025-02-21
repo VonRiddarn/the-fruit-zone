@@ -2,6 +2,7 @@ import React from "react";
 import "./FruitCard.scss";
 import Button from "../../components/Button/Button";
 import { Fruit } from "../../types/Fruit";
+import { sellSound } from "../../components/Sounds/Sounds";
 
 interface FruitCardProps {
 	fruit: Fruit;
@@ -18,6 +19,7 @@ const FruitCard = ({ fruit }: FruitCardProps) => {
 			<Button
 				title="Sell"
 				onClick={() => {
+					sellSound.play();
 					if (stock <= 0) return;
 					setStock(stock - 1);
 				}}
