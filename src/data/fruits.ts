@@ -1,4 +1,4 @@
-type Food = {
+type Fruits = {
 	image:
 		| "🍇"
 		| "🍈"
@@ -20,7 +20,7 @@ type Food = {
 	stock: number;
 };
 
-export const foodDb: Food[] = [
+export const fruitsDb: Fruits[] = [
 	{
 		image: "🍇",
 		name: "Grapes",
