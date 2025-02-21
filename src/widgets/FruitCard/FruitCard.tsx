@@ -5,9 +5,10 @@ import { Fruit } from "../../types/Fruit";
 
 interface FruitCardProps {
 	fruit: Fruit;
+	onRemove: (name: string) => void;
 }
 
-const FruitCard = ({ fruit }: FruitCardProps) => {
+const FruitCard = ({ fruit, onRemove }: FruitCardProps) => {
 	const [stock, setStock] = React.useState(fruit.stock);
 
 	return (
@@ -22,6 +23,13 @@ const FruitCard = ({ fruit }: FruitCardProps) => {
 					setStock(stock - 1);
 				}}
 			/>
+			<Button
+				title="Buy"
+				onClick={() => {
+					setStock(stock + 1);
+				}}
+			/>
+			<Button id="removeBtn" title="X" onClick={() => onRemove(fruit.name)} />
 		</article>
 	);
 };

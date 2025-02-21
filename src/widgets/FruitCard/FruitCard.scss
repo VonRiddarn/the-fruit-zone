@@ -26,4 +26,19 @@
 	p {
 		font-size: 1.2rem;
 	}
+
+	#removeBtn {
+		position: relative;
+		left: 85px;
+		bottom: 265px;
+		background: transparent;
+		border: none;
+		font-size: 20px;
+		color: #ff0000; /* Red color for X */
+		cursor: pointer;
+	}
+
+	#removeBtn:hover {
+		color: #cc0000; /* Darker red on hover */
+	}
 }
