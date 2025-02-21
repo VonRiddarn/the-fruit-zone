@@ -1,5 +1,14 @@
 import "./Button.scss";
 
-const Button = () => <button className="Button">Button</button>;
+type ButtonProps = {
+	title: string;
+	onClick?: React.MouseEventHandler<HTMLButtonElement>;
+};
+
+const Button = ({ title, onClick }: ButtonProps) => (
+	<button className="Button" onClick={onClick}>
+		{title}
+	</button>
+);
 
 export default Button;

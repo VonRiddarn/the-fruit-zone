@@ -7,7 +7,7 @@ function App() {
 			<h1>
 				The <span>fruit</span> zone
 			</h1>
-			<Button />
+			<Button title="Button" onClick={() => console.log("Hej")} />
 		</>
 	);
 }
