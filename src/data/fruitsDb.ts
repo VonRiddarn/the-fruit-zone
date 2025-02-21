@@ -20,7 +20,7 @@ export type Fruit = {
 	stock: number;
 };
 
-export const fruitsDb: Fruits[] = [
+export const fruitsDb: Fruit[] = [
 	{
 		image: "🍇",
 		name: "Grapes",
