@@ -12,7 +12,7 @@ const FruitCard = ({ fruit, onRemove }: FruitCardProps) => {
 	const [stock, setStock] = React.useState(fruit.stock);
 
 	return (
-		<article className="FruitCard">
+		<article className="FruitCard unselectable">
 			<h2>{fruit.image}</h2>
 			<h3>{fruit.name}</h3>
 			<p>Stock: {stock}</p>
