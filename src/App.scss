@@ -10,7 +10,7 @@ h1 {
 	font-size: 2.5rem;
 	span {
 		display: inline-block;
-		animation: combined 2s infinite linear;
+		animation: combined 2s infinite linear, rainbow 6s infinite linear;
 
 		@keyframes combined {
 			0%,
@@ -19,6 +19,60 @@ h1 {
 			}
 			50% {
 				transform: rotate(5deg) scale(1.2);
+			}
+		}
+
+		@keyframes rainbow {
+			0% {
+				color: #ffffff; // white
+			}
+			6.25% {
+				color: #ff0000; // red
+			}
+			12.5% {
+				color: #ff7f00; // orange
+			}
+			18.75% {
+				color: #ffff00; // yellow
+			}
+			25% {
+				color: #7fff00; // chartreuse green
+			}
+			31.25% {
+				color: #00ff00; // green
+			}
+			37.5% {
+				color: #00ff7f; // spring green
+			}
+			43.75% {
+				color: #00ffff; // cyan
+			}
+			50% {
+				color: #007fff; // azure
+			}
+			56.25% {
+				color: #00ffff; // cyan
+			}
+			62.5% {
+				color: #00ff7f; // spring green
+			}
+			68.75% {
+				color: #00ff00; // green
+			}
+			75% {
+				color: #7fff00; // chartreuse green
+			}
+			81.25% {
+				color: #ffff00; // yellow
+			}
+			87.5% {
+				color: #ff7f00; // orange
+			}
+			93.75% {
+				color: #ff0000; // red
+			}
+			100% {
+				color: #ffffff; // white
 			}
 		}
 	}
