@@ -1,4 +1,5 @@
 import "./App.scss";
+import Button from "./components/Button/Button";
 
 function App() {
 	return (
@@ -6,6 +7,7 @@ function App() {
 			<h1>
 				The <span>fruit</span> zone
 			</h1>
+			<Button />
 		</>
 	);
 }
