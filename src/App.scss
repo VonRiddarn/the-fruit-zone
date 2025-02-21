@@ -1,4 +1,4 @@
-@import "./index.scss";
+@use "./index.scss";
 
 :root {
 	color: rgb(255, 255, 255);
@@ -82,4 +82,5 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 1rem;
 }
