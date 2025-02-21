@@ -1,24 +1,4 @@
-export type Fruit = {
-	image:
-		| "🍇"
-		| "🍈"
-		| "🍉"
-		| "🍊"
-		| "🍋"
-		| "🍋‍🟩"
-		| "🍐"
-		| "🍏"
-		| "🍎"
-		| "🥭"
-		| "🍍"
-		| "🍌"
-		| "🍑"
-		| "🍒"
-		| "🍓"
-		| "🥝";
-	name: string;
-	stock: number;
-};
+import { Fruit } from "../types/Fruit";
 
 export const fruitsDb: Fruit[] = [
 	{

@@ -1,7 +1,7 @@
 import React from "react";
-import { Fruit } from "../../data/fruitsDb";
 import "./FruitCard.scss";
 import Button from "../../components/Button/Button";
+import { Fruit } from "../../types/Fruit";
 
 interface FruitCardProps {
 	fruit: Fruit;
