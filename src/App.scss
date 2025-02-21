@@ -1,0 +1,23 @@
+:root {
+	color: black;
+	background-color: rgb(114, 236, 114);
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	span {
+		display: inline-block;
+		animation: combined 2s infinite linear;
+
+		@keyframes combined {
+			0%,
+			100% {
+				transform: rotate(-5deg) scale(0.8);
+			}
+			50% {
+				transform: rotate(5deg) scale(1.2);
+			}
+		}
+	}
+}

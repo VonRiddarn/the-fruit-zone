@@ -1,8 +1,13 @@
 import "./App.scss";
-import Home from "./pages/home";
 
 function App() {
-	return <Home />;
+	return (
+		<>
+			<h1>
+				The <span>fruit</span> zone
+			</h1>
+		</>
+	);
 }
 
 export default App;
