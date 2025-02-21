@@ -1,7 +1,7 @@
 import { FruitImage } from "./FruitImage";
 
 export type Fruit = {
-	id: string;
+	id: number;
 	image: FruitImage;
 	name: string;
 	stock: number;

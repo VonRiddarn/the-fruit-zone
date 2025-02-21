@@ -7,8 +7,8 @@ import { Fruit } from "./types/Fruit";
 function App() {
 	const [fruits, setFruits] = useState<Fruit[]>(fruitsDb);
 
-	const removeFruit = (name: string) => {
-		setFruits((prevFruits) => prevFruits.filter((fruit) => fruit.name !== name));
+	const removeFruit = (id: number) => {
+		setFruits((prevFruits) => prevFruits.filter((fruit) => fruit.id !== id));
 	};
 
 	return (

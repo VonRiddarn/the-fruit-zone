@@ -5,7 +5,7 @@ import { Fruit } from "../../types/Fruit";
 
 interface FruitCardProps {
 	fruit: Fruit;
-	onRemove: (name: string) => void;
+	onRemove: (id: number) => void;
 }
 
 const FruitCard = ({ fruit, onRemove }: FruitCardProps) => {
@@ -29,7 +29,7 @@ const FruitCard = ({ fruit, onRemove }: FruitCardProps) => {
 					setStock(stock + 1);
 				}}
 			/>
-			<Button id="removeBtn" title="X" onClick={() => onRemove(fruit.name)} />
+			<Button id="removeBtn" title="X" onClick={() => onRemove(fruit.id)} />
 		</article>
 	);
 };
