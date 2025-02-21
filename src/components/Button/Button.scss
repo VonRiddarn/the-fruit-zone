@@ -1,4 +1,19 @@
 .Button {
 	min-width: 6rem;
+	min-height: 2rem;
 	aspect-ratio: 3 / 1; // Eg: 6 for 2
+
+	border: unset;
+	background-color: #4caf50;
+	color: #ffffff;
+	font-size: medium;
+	border-radius: 1rem;
+
+	&:hover {
+		background-color: #45a049; // Darker green
+	}
+
+	&:active {
+		background-color: #397d3b; // Even darker green
+	}
 }
